@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="4dp">
+
+    <!--on below line we are creating a
+        linear layout for grid view item-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--on below line we are creating
+            a simple image view-->
+        <ImageView
+            android:id="@+id/idIVCourse"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_user" />
+
+        <!--on below line we are creating
+            a simple text view-->
+        <TextView
+            android:id="@+id/iduser"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_margin="5dp"
+            android:padding="4dp"
+            android:text="id :"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/idname"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_margin="1dp"
+            android:padding="10dp"
+            android:text="name : "
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/idemail"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="90dp"
+        android:padding="20dp"
+        android:text="email : "
+        android:textAlignment="textStart"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Tick to save" />
+
+</androidx.cardview.widget.CardView>
